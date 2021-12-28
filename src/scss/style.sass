@@ -1,0 +1,703 @@
+@import "node_modules/bootstrap/scss/bootstrap"
+@import "buttons", "var", 'slider'
+
+html, body
+  scroll-behavior: smooth
+body
+  font-family: $opens
+  background-color: #181818
+.container
+  max-width: $xl
+  position: relative
+main
+  background-color: #181818
+  background-image: url("/img/main-bg.png")
+  background-size: cover
+  background-repeat: no-repeat
+
+
+header
+  padding: 9px 0 0 0
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  &_wrap
+    display: flex
+  &_link
+    font-family: $mons
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #fff
+    text-decoration: none !important
+    margin-right: 55px
+    white-space: nowrap
+    max-width: max-content
+    display: block
+    position: relative
+    &:hover
+      text-shadow: 0 0 .9px #DAC093, 0 0 .9px #DAC093
+      color: #DAC093
+    &:last-child
+      margin-right: 0
+    &:hover:after
+      width: 100%
+      transition: .3s all
+    &:after
+      left: -15px
+      content: ''
+      position: absolute
+      bottom: -5px
+      width: 0
+      max-width: 91px
+      height: 2px
+      background-color: #DAC093
+      border-radius: 39px
+.logo
+  display: block
+  margin-right: 95px
+  img
+    height: 77px
+.phone
+  margin-left: 55px
+  .telephone
+    text-align: right
+    display: flex
+    font-family: $mons
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    color: #FFFFFF
+    text-decoration: none !important
+    transition: .3s all
+    &:hover
+      color: #DAC093
+      svg
+        path
+          fill: #DAC093
+
+.main
+  &-center
+    margin-top: 196px
+    min-height: calc(100vh - 196px)
+  &-up
+    font-family: $mons
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #CFB383
+    margin-bottom: 30px
+  &-title
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 39px
+    line-height: 53px
+    color: #FFFFFF
+    max-width: 701px
+    margin-bottom: 50px
+  &-description
+    font-family: $opens
+    font-style: normal
+    font-weight: 300
+    font-size: 20px
+    line-height: 27px
+    color: #FFFFFF
+    max-width: 610px
+    margin-bottom: 40px
+  &-footer
+    display: flex
+
+.zakazat
+  background: linear-gradient(108.55deg, #181818 0.9%, #353535 100.74%)
+  position: relative
+  &-button
+    padding: 0 41px
+    margin-top: 55px
+  &-bg
+    position: relative
+    left: -60%
+  &-title, &-description
+    margin-top: 172px
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 33px
+    color: #FFFFFF
+  &-description
+    font-weight: 300
+    margin-top: 25px
+
+
+.section
+  position: relative
+  padding: 83px 0
+  &-title
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 27px
+    line-height: 37px
+    text-align: center
+    color: #FFFFFF
+    max-width: 842px
+    margin: 0 auto
+.burger-menu, .mobile-menu
+  display: none
+
+.uslugi
+  padding-top: 211px
+  background-image: url("/img/catalog-bg.png")
+  position: relative
+  &-title
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 33px
+    text-align: center
+    color: #181818
+
+  &-flex
+    display: flex
+    flex-wrap: wrap
+    max-width: 1429px
+    justify-content: center
+  &:before, &:after
+    content: ""
+    background-repeat: repeat-x
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 1
+  &:before
+    top: 0
+    background-image: url("/img/ait-top.png")
+
+  &:after
+    bottom: 0
+    background-image: url("/img/ait-top.png")
+    transform: rotateZ(-180deg) rotateY(180deg)
+    z-index: 2
+  &-wrapper
+    padding: 0 44px
+    position: relative
+    z-index: 2
+  &-item
+    background-color: #141414
+    background-size: 100%
+    max-width: 693px
+    width: 100%
+    max-height: 100%
+    height: 302px
+    padding: 8px
+    box-sizing: border-box
+    background-position: center
+    margin-right: 43px
+    &:nth-child(even)
+      margin-right: 0
+    &:nth-child(1n+3)
+      margin-top: 40px
+    &-1
+      background-image: url('/img/item-1.png')
+    &-2
+      background-image: url("/img/item-2.png")
+      flex: 1
+    &-3
+      background-image: url("/img/item-3.png")
+    &-4
+      background-image: url("/img/item-4.png")
+    &-5
+      background-image: url("/img/item-5.png")
+    &-padding
+      padding: 27px
+      border: 1px solid rgba(235, 210, 170, 0.1)
+      height: 100%
+    &-title
+      font-family: $opens
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 33px
+      color: #E7CFA9
+    &-description
+      font-family: $opens
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 27px
+      color: #FFFFFF
+      max-width: 301px
+      margin-top: 15px
+
+.we
+  background-image: url("/img/we.png")
+  background-repeat: no-repeat
+  padding-top: 105px
+  padding-bottom: 43px
+  &-custom
+    background-image: url("/img/d.png")
+    padding: 170px 0
+    &-content
+      margin-top: 95px
+    &-item
+      display: flex
+      font-family: $opens
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 27px
+      color: #FFFFFF
+      margin-bottom: 40px
+      max-width: 722px
+      &:last-child
+        margin-bottom: 0
+      svg
+        margin-right: 23px
+  &-title
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 39px
+    line-height: 53px
+    color: #FFFFFF
+  &-description
+    font-family: $opens
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 33px
+    color: #FFFFFF
+    max-width: 616px
+    margin-top: 50px
+  &-slogan
+    margin-top: 30px
+    margin-bottom: 50px
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 33px
+    max-width: 616px
+    color: #FFFFFF
+    span
+      color: #EBD2AA
+  a.button
+    padding: 0 36px
+.after-work
+  &-wrapper
+    margin-top: 80px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-title
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 39px
+    line-height: 53px
+    color: #FFFFFF
+  &-item
+    background: #FFFFFF
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.13)
+    border-radius: 7px
+    max-width: 464px
+    margin-bottom: 35px
+    position: relative
+    &-center
+      position: absolute
+      width: 100%
+      bottom: 0
+    &-padding
+      padding: 30px 70px 0px 30px
+    &-by
+      font-family: $roboto
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 16px
+      color: #888888
+      padding-bottom: 34px
+    &-text, &-title
+      margin-top: 15px
+      font-family: $roboto
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      line-height: 21px
+      color: #181818
+    &-title
+      margin-top: 0
+      font-weight: normal
+      font-size: 18px
+
+hr
+  max-width: 301px
+  border: 1px solid #EBD2AA
+  margin: 25px auto
+
+.whatsapp
+  background-image: url("/img/whatsapp.png")
+  background-repeat: no-repeat
+  width: 100%
+  max-width: 1112px
+  margin: 100px auto 0 auto
+  height: 334px
+  padding: 35px 56px
+  position: relative
+  &:after
+    content: ""
+    max-width: 1000px
+    width: 100%
+    height: 129px
+    background: #EBD2AA
+    border-radius: 34px
+    position: absolute
+    z-index: -1
+    bottom: -17px
+  &-icon
+    background: url("/img/whatsapp-icon.png") right bottom no-repeat,url("/img/whatsapp.png")
+    &-q
+      background: url("/img/q.png") right bottom no-repeat,url("/img/whatsapp.png")
+
+  &-title
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 39px
+    line-height: 53px
+    color: #FFFFFF
+  &-description
+    margin-top: 30px
+    font-family: $opens
+    font-style: normal
+    font-weight: 300
+    font-size: 20px
+    line-height: 27px
+    color: #FFFFFF
+  a.button-outline
+    margin: 65px auto 0 auto
+
+.line
+  position: relative
+  &:after
+    top: 0
+    content: ""
+    background-image: url("/img/line.png")
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    background-size: 100%
+    position: absolute
+
+.gallery
+  padding-bottom: 165px
+  padding-top: 40px
+  position: relative
+  &:before
+    content: ""
+    background-image: linear-gradient(180deg, #181818 0%, rgba(24, 24, 24, 0) 100%)
+    position: absolute
+    top: 0
+    width: 100%
+    height: 80px
+    z-index: 2
+  &-slider
+    position: relative
+    z-index: 2
+  .we-title
+    margin-left: 94px
+  &-wrapper
+    position: relative
+    margin-top: 120px
+  &-bg
+    &-text
+      color: #181818
+      text-shadow: rgb(235, 210, 170) 0px 1px 0px, rgb(235, 210, 170) 0px -1px 0px, rgb(235, 210, 170) 1px 0px 0px, rgb(235, 210, 170) -1px 0px 0px, rgb(235, 210, 170) 1px 1px 0px, rgb(235, 210, 170) 1px -1px 0px, rgb(235, 210, 170) -1px 1px 0px, rgb(235, 210, 170) -1px -1px 0px
+      font-family: $roboto
+      font-style: normal
+      font-weight: 900
+      font-size: 281px
+      line-height: 329px
+      position: absolute
+      top: 200px
+      left: 0
+      z-index: -1
+
+.popular
+  &-item
+    padding: 30px
+    background-size: cover
+    max-width: 506px
+    width: 100%
+    max-height: 100%
+    height: 377px
+    position: relative
+    &-1
+      background-image: url("/img/popular-item-1.png")
+    &-2
+      background-image: url("/img/popular-item-2.png")
+    &-3
+      background-image: url("/img/popular-item-3.png")
+    &-4
+      background-image: url("/img/popular-item-4.png")
+    &-5
+      background-image: url("/img/popular-item-5.png")
+    &-6
+      background-image: url("/img/popular-item-6.png")
+    &-title
+      font-family: $opens
+      font-style: normal
+      font-weight: normal
+      font-size: 36px
+      line-height: 49px
+      color: #FFFFFF
+    &-description, &-price
+      font-family: $opens
+      font-style: normal
+      font-size: 18px
+      line-height: 25px
+      color: #FFFFFF
+    &-description
+      margin-top: 26px
+      font-weight: 300
+    &-price
+      font-weight: normal
+      position: absolute
+      bottom: 30px
+      &_custom
+        text-align: center
+        position: relative
+        bottom: unset
+        max-width: 307px
+        margin: 10px auto 50px auto
+  &-orders
+    background: linear-gradient(114.49deg, #FFFFFF -0.77%, #E0E0E0 99.49%)
+    padding: 50px 0 100px 0
+    &-title
+      margin-bottom: 45px
+      font-family: $opens
+      font-style: normal
+      font-weight: normal
+      font-size: 48px
+      line-height: 65px
+      text-align: center
+      color: #181818
+    &-wrapper
+      display: flex
+      width: 100%
+      flex-wrap: wrap
+
+.dont-find
+  padding-top: 0
+.contact-form
+  background-image: url("/img/contact-bg.png")
+  background-repeat: no-repeat
+  background-size: 100%
+  &-title
+    font-family: $opens
+    font-style: normal
+    font-weight: normal
+    font-size: 27px
+    line-height: 37px
+    color: #FFFFFF
+    max-width: 692px
+  &-description
+    margin-top: 30px
+    margin-bottom: 10px
+    max-width: 772px
+    font-family: $opens
+    font-style: normal
+    font-weight: 300
+    font-size: 20px
+    line-height: 27px
+    color: #FFFFFF
+  &-group
+    margin-top: 50px
+    display: flex
+    align-items: center
+    border-bottom: 1px solid #EBD3AA
+    max-width: 520px
+    padding: 10px 0
+    input
+      width: 100%
+      background-color: transparent
+      border: 0
+      font-family: $opens
+      font-style: normal
+      font-weight: normal
+      font-size: 17px
+      line-height: 113.18%
+      color: #626262
+      &:active, &:focus
+        border: 0
+        outline: 0
+        box-shadow: unset
+  &-icon
+    margin-right: 14px
+  button
+    margin-top: 50px
+  span
+    margin-top: 20px
+    display: block
+    font-family: $opens
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    color: #EBD3AB
+
+footer
+  .social
+    margin-top: 34px
+    a:first-child
+      margin-right: 63px
+  padding: 73px 0 43px 0
+  .phone
+    margin-top: 25px
+    margin-left: 0
+    .telephone
+      text-align: left
+  .col-lg-2
+    display: flex
+    flex-direction: column
+    justify-content: center
+.footer
+  &-title
+    font-family: $mons
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    color: #FFFFFF
+  &-content
+    &-item
+      font-family: $mons
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 17px
+      color: #FFFFFF
+      margin-bottom: 20px
+
+      svg
+        margin-right: 19px
+      a
+        display: flex
+        align-items: center
+        color: #fff
+        text-decoration: none
+        margin-top: 10px
+      &:first-child
+        margin-top: 40px
+      &:last-child
+        margin-bottom: 0
+        display: flex
+        align-items: center
+
+  &-copy
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    position: relative
+    &:after, &:before
+      position: absolute
+      content: ""
+      height: 100%
+      width: 1px
+      background: #2A2A2A
+    &:after
+      right: 21%
+    &:before
+      left: 21%
+    .logo
+      margin-right: 0
+    span
+      margin-top: 20px
+      font-family: $opens
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 19px
+      color: #FFFFFF
+  &-links
+    a
+      display: block
+      font-family: $mons
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 20px
+      color: #FFFFFF
+      text-decoration: none
+      margin-bottom: 5px
+      transition: .3s all
+      &:last-child
+        margin-bottom: 0
+      &:hover
+        text-shadow: 0 0 1px #DAC093, 0 0 1px #DAC093
+        color: #DAC093
+
+.modal-content
+  background-color: transparent
+  border: 0
+  border-radius: 5px
+.modal-backdrop
+  background: rgba(0, 0, 0, 0.73)
+  filter: blur(19px)
+.my-modal
+  &-content
+    background-image: url("/img/modal-bg.png")
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 15px
+  &-wrapper
+    border: 1px solid #E3CAA0
+    border-radius: 5px
+    padding: 100px 0 60px 0
+    position: relative
+
+  &-close
+    position: absolute
+    right: 30px
+    top: 30px
+    cursor: pointer
+
+
+.form-wrapper
+  max-width: 772px
+  margin: 0 auto
+  .contact-form
+    &-title, &-description
+      text-align: center
+    &-description
+      margin-top: 20px
+    &-group
+      margin: 50px auto 0 auto
+  button
+    margin: 50px auto 20px auto
+  span
+    display: block
+    font-family: $opens
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    text-align: center
+    color: #EBD3AB
+
+.gallery-more
+  position: relative
+  top: 23px
+  a.button
+    margin: 0 auto
+    padding: 22px 47px
+.mobile-text
+  display: none
+@import "media"

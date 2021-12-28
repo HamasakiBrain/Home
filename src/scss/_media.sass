@@ -1,0 +1,392 @@
+@media (max-width: $xl)
+  body
+    overflow-x: hidden
+  .container
+    max-width: 1400px
+  .menu
+    &_link
+      font-size: 15px
+      margin-right: 30px
+  .logo
+    margin-right: 5%
+@media (max-width: 1440px)
+  .container
+    max-width: 1300px
+  .menu
+    &_link
+      font-size: 13px
+  .phone
+    .telephone
+      font-size: 13px
+  .main
+    &-center
+      margin-top: 95px
+      min-height: calc(100vh - 156px)
+@media (max-width: 1200px)
+  .container
+    max-width: 990px
+  .menu
+    &_link
+      font-size: 11px
+      margin-right: 20px
+  .logo
+    img
+      height: 44px
+
+@media (max-width: $sm)
+  .uslugi
+    &:after, &:before
+      content: unset
+    background-image: linear-gradient(136.1deg, #FFFFFF 27.49%, #E0E0E0 99.17%)
+    &-title
+      margin-bottom: 43px
+    .container, &-wrapper
+      padding: 0
+    &-item
+      margin-top: 0 !important
+      height: 285px
+      margin-right: 0
+      background-repeat: no-repeat
+      margin-bottom: 20px
+      &-1
+        background-image: url("/img/item-1-m.png")
+      &-2
+        background-image: url("/img/item-2-m.png")
+      &-3
+        background-image: url("/img/item-3-m.png")
+      &-4
+        background-image: url("/img/item-4-m.png")
+      &-5
+        background-image: url("/img/item-5-m.png")
+
+      &:last-child
+        margin-bottom: 0
+      &-padding
+        padding: 18px 8px
+      &-title
+        font-size: 18px
+        line-height: 25px
+      &-description
+        font-size: 14px
+        line-height: 19px
+  .mobile-text
+    display: block
+  .line
+    &:after
+      height: 100vh
+      background-size: auto
+      background-position: center
+  .zakazat
+    &-bg
+      height: 282px
+      left: -94vw
+      position: absolute
+  .burger-menu
+    display: block
+    border: 0
+    background-color: transparent
+    position: relative
+    z-index: 1
+  .mobile-menu
+    position: fixed
+    z-index: 10
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    background: #181818
+    display: block
+    height: 100vh
+    padding: 7px 5px
+    overflow: hidden
+    transform: translateX(-100%)
+    transition: .3s all
+    &-wrapper
+      padding: 60px 30px
+    &.active
+      transform: translateX(0)
+  .menu
+    justify-content: space-between
+    &_wrap
+      display: block
+    &_link
+      font-size: 18px
+      margin-right: 0
+      margin-bottom: 17px
+      &:last-child
+        margin-bottom: 51px
+  .phone
+    margin-left: 37px
+    .telephone
+      text-align: unset
+      font-size: 18px
+      line-height: 22px
+  main
+    background-position: 41%
+    padding-bottom: 120px
+  .main
+    &-up, &-title, &-description
+      text-align: center
+    &-up
+      font-size: 10px
+      line-height: 12px
+      margin-bottom: 20px
+    &-title
+      font-size: 24px
+      line-height: 33px
+      margin-bottom: 20px
+    &-description
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 30px
+    &-footer
+      flex-wrap: wrap
+      justify-content: center
+    &-center
+      margin-top: 44px
+      min-height: calc(100vh - 87px)
+  .button
+    &-margin
+      &-rigth
+        margin-right: 0
+        margin-bottom: 25px
+  .section
+    padding: 43px 0
+  .zakazat
+    &-button
+      margin: 0 auto
+      padding: 0 21px
+    .section-title
+      font-size: 24px
+      line-height: 33px
+    &-title
+      margin-top: 40px !important
+    &-description
+      margin-top: 20px !important
+      margin-bottom: 70px !important
+    &-title, &-description
+      font-size: 16px
+      line-height: 22px
+      max-width: 264px
+      text-align: center
+      margin: 0 auto
+
+  .rotateM
+    top: 44%
+    z-index: 2
+    right: 0
+    position: absolute
+  .we
+    padding: 40px 0
+    background-position: 34%
+    background-size: cover
+    &-custom
+      .container
+        padding: 0 5px
+      &-content
+        margin-top: 40px
+      &-item
+        font-size: 14px
+        line-height: 19px
+        margin-bottom: 20px
+
+        svg
+          width: 20px
+          height: 20px
+          margin-right: 10px
+    &-title
+      font-size: 24px
+      line-height: 33px
+      text-align: center
+    &-description
+      margin-top: 20px
+      font-size: 16px
+      line-height: 22px
+    &-slogan
+      font-size: 16px
+      line-height: 22px
+      max-width: 97%
+    a.button
+      margin: 0 auto
+
+  hr
+    max-width: 229px
+    margin: 0 auto 25px auto
+  .after-work
+    &-item
+      &-padding
+        padding: 24px 15px
+      &-center
+        position: relative
+      &-text
+        font-size: 14px
+        line-height: 16px
+      &-by
+        padding-bottom: 0
+    &-wrapper
+      margin-top: 30px
+    &-title
+      font-size: 24px
+      line-height: 33px
+      text-align: center
+
+  .whatsapp
+    padding: 25px 8px 25px 16px
+    height: 282px
+    &:after
+      height: 50px
+      bottom: -10px
+      width: 90%
+    a.button-outline
+      margin-top: 32px
+    &-icon
+      background: url("/img/whatsapp-icon.png") 97% center no-repeat, url("/img/whatsapp-m.png")
+      background-size: 127px, cover
+      &-q
+        background: url("/img/q.png") 97% center no-repeat, url("/img/whatsapp-m.png")
+        background-size: 73px, cover
+        margin: -30px auto 0 auto
+    &-description
+      margin-top: 15px
+      font-size: 14px
+      line-height: 19px
+      max-width: 246px
+    &-title
+      font-size: 24px
+      line-height: 32.68px
+  .section.after-work
+    .container
+      padding: 0 5px
+  .gallery
+    padding: 40px 0
+    &-wrapper
+      margin-top: 25px
+      padding: 0 41px !important
+    &-bg-text
+      display: none
+    .we-title
+      margin-top: 10px
+      margin-left: 0
+  .swiper
+    height: 156px
+    &-button
+      &-next
+        right: 5px !important
+      &-prev
+        left: 5px !important
+      &-next, &-prev
+        top: 43% !important
+        svg
+          width: 20px
+  .swiper-slide
+    img
+      width: 237px
+      height: 156px
+  .popular-orders
+    background: #181818
+    &-title
+      font-size: 24px
+      line-height: 33px
+      color: #fff
+    .container
+      padding: 0
+  .popular
+    &-item
+      height: 230px
+      &-title
+        font-size: 24px
+        line-height: 32px
+      &-description
+        margin-top: 10px
+      &-price
+        bottom: 10px
+        &_custom
+          margin: 25px auto
+      &-description, &-price
+        font-size: 14px
+        line-height: 19px
+      &-6
+        padding-top: 15px
+        .mt-5
+          margin-top: 0 !important
+  .dont-find
+    .container
+      padding: 0 5px
+
+  .contact-form
+    &-title
+      font-size: 24px
+      text-align: center
+      line-height: 33px
+    .container
+      padding: 0 5px
+    &-description
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+    form
+      padding: 0 10px
+    button
+      margin-left: auto
+      margin-right: auto
+    span
+      text-align: center
+  footer
+    padding: 0 0 50px 0
+    .col-lg-2
+      display: none
+    .col-lg-3
+      order: 1
+    .col-lg-7
+      margin-top: 47px
+      order: 2
+
+    .phone
+      margin-top: 20px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  .footer
+    &-title
+      text-align: center
+    &-links
+      margin-top: 30px
+      a
+        text-align: center
+        margin-bottom: 10px
+    &-copy
+      &:after, &:before
+        content: unset
+      .logo
+        img
+          height: 74px
+  .my-modal-content
+    background-position: center
+  .my-modal-wrapper
+    padding: 33px 0 20px 0
+    .contact-form
+      &-title, &-description
+        display: none
+    .form-wrapper
+      padding: 0 20px
+  .my-modal-close
+    svg
+      width: 27px
+      height: 27px
+
+  .gallery-more
+    margin-top: 30px
+@media (min-width: 320px) and (max-width: 360px)
+  .zakazat
+    &-bg
+      left: -95%
+      top: -10%
+  .swiper-button
+    &-next, &-prev
+      top: 46% !important
+
+@media (min-width: 320px) and (max-width: 760px)
+  .main-center
+    min-height: 100% !important

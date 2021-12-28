@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+<div class="line">
+    <main>
+        <header>
+            <div class="container">
+                <div class="menu">
+                    <a href="/" class="logo"> <img src="/img/logo.svg" alt=""></a>
+                    <div class="menu_wrap">
+                        <a href="#" class="menu_link">О компании</a>
+                        <a href="#zakazat" class="menu_link">Подобрать вариант</a>
+                        <a href="#whatsapp" class="menu_link">Задать вопрос</a>
+                        <a href="#gallery" class="menu_link">Примеры работ</a>
+                        <a href="#reviews" class="menu_link">Отзывы</a>
+                        <a href="#popular-orders" class="menu_link">Услуги</a>
+                        <a href="#contact-form" class="menu_link">Оставить заявку</a>
+                    </div>
+                    <div class="phone">
+                        <a class="telephone mb-3" href="tel:+7(930)166-72-48">
+                            <svg width="17" class="mr-3" height="17" viewBox="0 0 17 17" fill="#DAC093"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.7638 14.1361L14.367 16.5137C14.0132 16.8765 13.5442 16.9994 13.0875 17C11.0677 16.9395 9.15861 15.9474 7.5911 14.9286C5.01812 13.0568 2.6573 10.7358 1.17561 7.93095C0.607328 6.75479 -0.0594691 5.2541 0.00423838 3.94129C0.00991922 3.44744 0.143001 2.96276 0.490807 2.64443L2.88761 0.248836C3.38531 -0.174507 3.86662 -0.028137 4.18512 0.464976L6.11336 4.12142C6.31631 4.5546 6.19989 5.01872 5.89709 5.32825L5.01405 6.21083C4.95954 6.28551 4.92483 6.37051 4.92395 6.46302C5.26256 7.77374 6.28839 8.98184 7.1946 9.81323C8.1008 10.6446 9.07487 11.771 10.3393 12.0377C10.4956 12.0813 10.687 12.0966 10.7988 11.9927L11.826 10.948C12.1801 10.6796 12.6914 10.5484 13.0695 10.7679H13.0875L16.5655 12.8212C17.0761 13.1413 17.1294 13.7598 16.7638 14.1361Z"
+                                      fill="white"/>
+                            </svg>
+                            +7(930)166-72-48
+                        </a>
+                        <a class="telephone" href="tel:+7(482)271-07-17">
+                            <svg width="17" class="mr-3" height="17" viewBox="0 0 17 17" fill="#DAC093"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.7638 14.1361L14.367 16.5137C14.0132 16.8765 13.5442 16.9994 13.0875 17C11.0677 16.9395 9.15861 15.9474 7.5911 14.9286C5.01812 13.0568 2.6573 10.7358 1.17561 7.93095C0.607328 6.75479 -0.0594691 5.2541 0.00423838 3.94129C0.00991922 3.44744 0.143001 2.96276 0.490807 2.64443L2.88761 0.248836C3.38531 -0.174507 3.86662 -0.028137 4.18512 0.464976L6.11336 4.12142C6.31631 4.5546 6.19989 5.01872 5.89709 5.32825L5.01405 6.21083C4.95954 6.28551 4.92483 6.37051 4.92395 6.46302C5.26256 7.77374 6.28839 8.98184 7.1946 9.81323C8.1008 10.6446 9.07487 11.771 10.3393 12.0377C10.4956 12.0813 10.687 12.0966 10.7988 11.9927L11.826 10.948C12.1801 10.6796 12.6914 10.5484 13.0695 10.7679H13.0875L16.5655 12.8212C17.0761 13.1413 17.1294 13.7598 16.7638 14.1361Z"
+                                      fill="white"/>
+                            </svg>
+                            +7(482)271-07-17
+                        </a>
+                    </div>
+                    <button class="burger-menu">
+                        <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2.5C0 1.11929 1.11929 0 2.5 0H26.5C27.8807 0 29 1.11929 29 2.5C29 3.88071 27.8807 5 26.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z"
+                                  fill="white"/>
+                            <path d="M0 12.5C0 11.1193 1.11929 10 2.5 10H26.5C27.8807 10 29 11.1193 29 12.5C29 13.8807 27.8807 15 26.5 15H2.5C1.11929 15 0 13.8807 0 12.5Z"
+                                  fill="white"/>
+                            <path d="M0 22.5C0 21.1193 1.11929 20 2.5 20H26.5C27.8807 20 29 21.1193 29 22.5C29 23.8807 27.8807 25 26.5 25H2.5C1.11929 25 0 23.8807 0 22.5Z"
+                                  fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="main-center">
+            <div class="container">
+                <div class="main-up">Более 1000 довольных клиентов</div>
+                <div class="main-title">
+                    Производим мебель европейского качества по индивидуальным дизайн макетам
+                </div>
+                <div class="main-description">
+                    Оставьте заявку, а наши менеджеры свяжутся с вами через несколько минут и рассчитают стоимость
+                    работ.
+                    Так же вы можете запросить бесплатный вызов замерщика и разработку дизайн-проекта индивидуально для
+                    вашей ситуации.
+                </div>
+                <div class="main-footer">
+                    <a href="#" class="button button-margin-rigth" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a>
+                    <a href="#popular-orders" class="button-outline">Подобрать вариант</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="section zakazat" id="zakazat">
+        <div class="container">
+            <div class="section-title">
+                Давно задумываетесь о покупке новой мебели, пересмотрели все каталоги и обошли все магазины в городе, но
+                не
+                нашли чего-то подходящего?
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="/img/image.png" alt="" class="zakazat-bg">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="zakazat-title">Создаем долго служащую мебель с гармоничным дизайном, который впишется в
+                        интерьер вашего дома.
+                    </div>
+                    <div class="zakazat-description">Мы подготовим ваш дизайн проект, а наш менеджер поможет
+                        определиться с
+                        решением
+                    </div>
+                    <a href="#" class="button zakazat-button" data-toggle="modal" data-target="#exampleModal">Заказать дизайн проект</a>
+                </div>
+                <div class="col-2">
+                    <img src="/img/pen.png" alt="" class="rotateM">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section uslugi">
+    <div class="container">
+       <div class="mobile-text uslugi-title">Почему выбирают нас?</div>
+        <div class="uslugi-wrapper">
+            <div class="uslugi-flex">
+                <div class="uslugi-item uslugi-item-1">
+                    <div class="uslugi-item-padding">
+                        <div class="uslugi-item-title">Высококвалифицированные</div>
+                        <div class="uslugi-item-description">
+                            Технологи и дизайнеры <br> разработают дизайн и <br> функционал под ваши <br> нужды
+                        </div>
+                    </div>
+                </div>
+                <div class="uslugi-item uslugi-item-2">
+                    <div class="uslugi-item-padding">
+                        <div class="uslugi-item-title">Известные подрядчики:</div>
+                        <div class="uslugi-item-description">
+                            Egger, Blum, Hettich, <br> Kessebohmer дают <br> гарантию на продукцию <br> более 20лет
+                        </div>
+                    </div>
+                </div>
+                <div class="uslugi-item uslugi-item-3">
+                    <div class="uslugi-item-padding">
+                        <div class="uslugi-item-title">Современное оборудование</div>
+                        <div class="uslugi-item-description">
+                            Позволяет делать евро запилы <br> столешниц и лазерное <br> кромление. Разрабатывать <br>
+                            многообразный функционал
+                        </div>
+                    </div>
+                </div>
+                <div class="uslugi-item uslugi-item-4">
+                    <div class="uslugi-item-padding">
+                        <div class="uslugi-item-title">Собственный сервис</div>
+                        <div class="uslugi-item-description">
+                            Доставит товар в <br> лучшем виде к вам <br> домой
+                        </div>
+                    </div>
+                </div>
+                <div class="uslugi-item uslugi-item-5">
+                    <div class="uslugi-item-padding">
+                        <div class="uslugi-item-title">Собственное производство</div>
+                        <div class="uslugi-item-description">
+                            Позволяет создавать <br> мебель индивидуально <br> под Ваш дизайн и размеры
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section we">
+    <div class="container">
+        <div class="we-title">Мы «Тёплый Дом»</div>
+        <div class="we-description">
+            На рынке с 2008 года. Ни раз полностью мебелизировали дома по дизайнерскому проекту. А также делали различную мебель в парихмахерские, офисные здания и т.д. Одним из наших преимуществ является то , что мы продаём мебель на 15-20% ниже рынка
+        </div>
+        <div class="we-slogan">Так же мы даем <span>3х летнюю гарантию</span> на произведенную нами мебель.</div>
+        <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Вызвать замерщика</a>
+    </div>
+</div>
+<div class="section after-work" id="reviews">
+    <div class="container">
+        <div class="after-work-title">
+            Что говорят люди после работы с нами
+        </div>
+        <div class="after-work-wrapper">
+            <div class="block">
+                <div class="after-work-item">
+                    <div class="after-work-item-padding">
+                        <div class="after-work-item-title">Елена</div>
+                        <div class="after-work-item-text">
+                            Заказывали матрас. Очень понравилось, что сотрудник магазина связался со мной и предложил
+                            более дешёвый аналог.
+                            <br>
+                            <br>
+                            Точнее, я почти бездумно заказала к кровати предлагаемый сайтом матрас, а сотрудник
+                            просветил, что можно найти другой вариант, по качеству не хуже, но более подходящий к
+                            кровати и дешевле.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="after-work-item-padding pt-0">
+                        <div class="after-work-item-by">Отзыв оставлен через: <a href="https://vk.com/topic-70106656_40383929" target="_blank">
+                            <svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V24H24V0H0ZM10.6538 6.41748C11.3333 6.41044 11.998 6.48578 12.3223 6.49512C13.5243 6.52972 13.7365 7.13766 13.7212 7.6377C13.6987 8.37004 13.2275 11.4679 14.1006 11.77C15.3728 11.0897 16.2259 8.97684 16.8471 7.6377C17.1614 6.96034 17.1117 6.92668 17.8359 6.92578L20.7129 6.92138C21.4057 6.92052 21.3786 6.89622 21.6006 7.1792C22.1168 7.83736 19.9716 10.5751 19.2788 11.332C18.0002 12.729 18.7462 13.2699 18.9521 13.4619C19.9063 14.3516 20.8283 15.2741 21.4014 16.125C21.8569 16.8014 21.6688 17.4312 21.0893 17.4551L18.0044 17.5825C16.9806 17.6246 15.3888 15.7895 15.1348 15.3896C14.9293 15.0598 13.939 14.6465 13.8457 15.4892L13.7153 16.6655C13.6206 17.5063 12.9998 17.4867 12.5098 17.5077C9.11638 17.6538 7.96076 16.3618 6.25192 14.455C4.9995 12.6838 3.80432 10.9024 2.81394 8.76848C2.5175 8.12972 2.36048 7.66114 2.32028 7.16448C2.8186 6.775 4.56774 6.94276 5.74216 6.91692C6.06338 6.90984 6.28012 7.0939 6.44968 7.46038C7.1113 8.89064 7.83286 10.2952 8.78758 11.537C9.20336 11.92 9.57092 12.0608 9.75438 11.2822C9.8609 11.2724 9.85234 9.9829 9.85838 9.01018C9.86252 8.3423 9.78406 7.54136 8.65282 7.1718C8.88164 6.57202 9.78012 6.42654 10.6538 6.41748Z"
+                                      fill="#2F8FFF"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="after-work-item">
+                    <div class="after-work-item-padding">
+                        <div class="after-work-item-title">Мария</div>
+                        <div class="after-work-item-text">
+                            Постоянно заказываем в этом магазине. Фартук и стулья на фото. Девочки всегда подскажут и
+                            помогут в выборе. Цены приемлемые. Очень довольны качеством и быстрой доставкой.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="after-work-item-padding pt-0">
+                        <div class="after-work-item-by">Отзыв оставлен через: <a href="https://vk.com/topic-70106656_40383929" target="_blank">
+                            <svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V24H24V0H0ZM10.6538 6.41748C11.3333 6.41044 11.998 6.48578 12.3223 6.49512C13.5243 6.52972 13.7365 7.13766 13.7212 7.6377C13.6987 8.37004 13.2275 11.4679 14.1006 11.77C15.3728 11.0897 16.2259 8.97684 16.8471 7.6377C17.1614 6.96034 17.1117 6.92668 17.8359 6.92578L20.7129 6.92138C21.4057 6.92052 21.3786 6.89622 21.6006 7.1792C22.1168 7.83736 19.9716 10.5751 19.2788 11.332C18.0002 12.729 18.7462 13.2699 18.9521 13.4619C19.9063 14.3516 20.8283 15.2741 21.4014 16.125C21.8569 16.8014 21.6688 17.4312 21.0893 17.4551L18.0044 17.5825C16.9806 17.6246 15.3888 15.7895 15.1348 15.3896C14.9293 15.0598 13.939 14.6465 13.8457 15.4892L13.7153 16.6655C13.6206 17.5063 12.9998 17.4867 12.5098 17.5077C9.11638 17.6538 7.96076 16.3618 6.25192 14.455C4.9995 12.6838 3.80432 10.9024 2.81394 8.76848C2.5175 8.12972 2.36048 7.66114 2.32028 7.16448C2.8186 6.775 4.56774 6.94276 5.74216 6.91692C6.06338 6.90984 6.28012 7.0939 6.44968 7.46038C7.1113 8.89064 7.83286 10.2952 8.78758 11.537C9.20336 11.92 9.57092 12.0608 9.75438 11.2822C9.8609 11.2724 9.85234 9.9829 9.85838 9.01018C9.86252 8.3423 9.78406 7.54136 8.65282 7.1718C8.88164 6.57202 9.78012 6.42654 10.6538 6.41748Z"
+                                      fill="#2F8FFF"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="after-work-item">
+                <div class="after-work-item-padding ">
+                    <div class="after-work-item-title">Мария</div>
+                    <div class="after-work-item-text">
+                        Хотелось бы выразить огромную благодарность компании "Теплый дом" и менеджеру Алине за то что
+                        воплотили в жизнь мою мечту о новой кухне!!<br><br>
+                        Все получилось просто замечательно. <br><br>
+                        Отношение к делу, качество материалов, проведенных работ и профессионализм сотрудников на
+                        высоте.<br><br>
+                        Самый большой плюс что компания работает по индивидуальным проектам и могут предложить и сделать
+                        именно то что хотелось бы. <br><br>
+                        Мы остались очень довольны и обязательно будем рекомендовать вас друзьям и знакомым. <br><br>
+                        Большое вам спасибо!
+                    </div>
+                </div>
+                <div class="after-work-item-center">
+                    <hr>
+                    <div class="after-work-item-padding pt-0">
+                        <div class="after-work-item-by">Отзыв оставлен через: <a href="https://vk.com/topic-70106656_40383929" target="_blank">
+                            <svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V24H24V0H0ZM10.6538 6.41748C11.3333 6.41044 11.998 6.48578 12.3223 6.49512C13.5243 6.52972 13.7365 7.13766 13.7212 7.6377C13.6987 8.37004 13.2275 11.4679 14.1006 11.77C15.3728 11.0897 16.2259 8.97684 16.8471 7.6377C17.1614 6.96034 17.1117 6.92668 17.8359 6.92578L20.7129 6.92138C21.4057 6.92052 21.3786 6.89622 21.6006 7.1792C22.1168 7.83736 19.9716 10.5751 19.2788 11.332C18.0002 12.729 18.7462 13.2699 18.9521 13.4619C19.9063 14.3516 20.8283 15.2741 21.4014 16.125C21.8569 16.8014 21.6688 17.4312 21.0893 17.4551L18.0044 17.5825C16.9806 17.6246 15.3888 15.7895 15.1348 15.3896C14.9293 15.0598 13.939 14.6465 13.8457 15.4892L13.7153 16.6655C13.6206 17.5063 12.9998 17.4867 12.5098 17.5077C9.11638 17.6538 7.96076 16.3618 6.25192 14.455C4.9995 12.6838 3.80432 10.9024 2.81394 8.76848C2.5175 8.12972 2.36048 7.66114 2.32028 7.16448C2.8186 6.775 4.56774 6.94276 5.74216 6.91692C6.06338 6.90984 6.28012 7.0939 6.44968 7.46038C7.1113 8.89064 7.83286 10.2952 8.78758 11.537C9.20336 11.92 9.57092 12.0608 9.75438 11.2822C9.8609 11.2724 9.85234 9.9829 9.85838 9.01018C9.86252 8.3423 9.78406 7.54136 8.65282 7.1718C8.88164 6.57202 9.78012 6.42654 10.6538 6.41748Z"
+                                      fill="#2F8FFF"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="after-work-item">
+                    <div class="after-work-item-padding">
+                        <div class="after-work-item-title">Мария</div>
+                        <div class="after-work-item-text">
+                            Огромное Спасибо, Вам, за работу и реализацию наших идей!<br><br>
+                            Мебель успешно заняла свое место.<br><br>
+                            Все задуманное сбылось!!! Желаем, Вам, много новых, интересных, проектов!<br><br>
+                            Всего доброго!!!😉
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="after-work-item-padding pt-0">
+                        <div class="after-work-item-by">Отзыв оставлен через: <a href="https://vk.com/topic-70106656_40383929" target="_blank">
+                            <svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V24H24V0H0ZM10.6538 6.41748C11.3333 6.41044 11.998 6.48578 12.3223 6.49512C13.5243 6.52972 13.7365 7.13766 13.7212 7.6377C13.6987 8.37004 13.2275 11.4679 14.1006 11.77C15.3728 11.0897 16.2259 8.97684 16.8471 7.6377C17.1614 6.96034 17.1117 6.92668 17.8359 6.92578L20.7129 6.92138C21.4057 6.92052 21.3786 6.89622 21.6006 7.1792C22.1168 7.83736 19.9716 10.5751 19.2788 11.332C18.0002 12.729 18.7462 13.2699 18.9521 13.4619C19.9063 14.3516 20.8283 15.2741 21.4014 16.125C21.8569 16.8014 21.6688 17.4312 21.0893 17.4551L18.0044 17.5825C16.9806 17.6246 15.3888 15.7895 15.1348 15.3896C14.9293 15.0598 13.939 14.6465 13.8457 15.4892L13.7153 16.6655C13.6206 17.5063 12.9998 17.4867 12.5098 17.5077C9.11638 17.6538 7.96076 16.3618 6.25192 14.455C4.9995 12.6838 3.80432 10.9024 2.81394 8.76848C2.5175 8.12972 2.36048 7.66114 2.32028 7.16448C2.8186 6.775 4.56774 6.94276 5.74216 6.91692C6.06338 6.90984 6.28012 7.0939 6.44968 7.46038C7.1113 8.89064 7.83286 10.2952 8.78758 11.537C9.20336 11.92 9.57092 12.0608 9.75438 11.2822C9.8609 11.2724 9.85234 9.9829 9.85838 9.01018C9.86252 8.3423 9.78406 7.54136 8.65282 7.1718C8.88164 6.57202 9.78012 6.42654 10.6538 6.41748Z"
+                                      fill="#2F8FFF"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="after-work-item">
+                    <div class="after-work-item-padding">
+                        <div class="after-work-item-title">Марина</div>
+                        <div class="after-work-item-text">
+                            Огромная благодарность компании "Теплый дом", а особенно менеджеру Алине . Благодаря ей
+                            удалось создать ту красоту о которой я именно и мечтала. Большое Вам спасибо!!
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="after-work-item-padding pt-0">
+                        <div class="after-work-item-by">Отзыв оставлен через: <a href="https://vk.com/topic-70106656_40383929" target="_blank">
+                            <svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V24H24V0H0ZM10.6538 6.41748C11.3333 6.41044 11.998 6.48578 12.3223 6.49512C13.5243 6.52972 13.7365 7.13766 13.7212 7.6377C13.6987 8.37004 13.2275 11.4679 14.1006 11.77C15.3728 11.0897 16.2259 8.97684 16.8471 7.6377C17.1614 6.96034 17.1117 6.92668 17.8359 6.92578L20.7129 6.92138C21.4057 6.92052 21.3786 6.89622 21.6006 7.1792C22.1168 7.83736 19.9716 10.5751 19.2788 11.332C18.0002 12.729 18.7462 13.2699 18.9521 13.4619C19.9063 14.3516 20.8283 15.2741 21.4014 16.125C21.8569 16.8014 21.6688 17.4312 21.0893 17.4551L18.0044 17.5825C16.9806 17.6246 15.3888 15.7895 15.1348 15.3896C14.9293 15.0598 13.939 14.6465 13.8457 15.4892L13.7153 16.6655C13.6206 17.5063 12.9998 17.4867 12.5098 17.5077C9.11638 17.6538 7.96076 16.3618 6.25192 14.455C4.9995 12.6838 3.80432 10.9024 2.81394 8.76848C2.5175 8.12972 2.36048 7.66114 2.32028 7.16448C2.8186 6.775 4.56774 6.94276 5.74216 6.91692C6.06338 6.90984 6.28012 7.0939 6.44968 7.46038C7.1113 8.89064 7.83286 10.2952 8.78758 11.537C9.20336 11.92 9.57092 12.0608 9.75438 11.2822C9.8609 11.2724 9.85234 9.9829 9.85838 9.01018C9.86252 8.3423 9.78406 7.54136 8.65282 7.1718C8.88164 6.57202 9.78012 6.42654 10.6538 6.41748Z"
+                                      fill="#2F8FFF"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="whatsapp whatsapp-icon" id="whatsapp">
+            <div class="whatsapp-title">Уже знаете что хотите получить?</div>
+            <div class="whatsapp-description">Отправьте фотографию в WhatsApp, а мы назовем цену и сроки производства
+            </div>
+            <a class="button-outline" href="httsp://wa.me/79607003094" target="_blank">Написать в Whatsapp</a>
+        </div>
+    </div>
+</div>
+<div class="section we we-custom">
+    <div class="container">
+        <div class="we-title">Компания “Тёплый Дом”</div>
+        <div class="we-custom-content">
+            <div class="we-custom-item">
+                <div class="we-custom-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 0L22.5889 3.87681L28.5801 3.43769L30.0139 9.27139L35.119 12.4377L32.85 18L35.119 23.5623L30.0139 26.7286L28.5801 32.5623L22.5889 32.1232L18 36L13.4111 32.1232L7.41987 32.5623L5.9861 26.7286L0.880983 23.5623L3.15 18L0.880983 12.4377L5.9861 9.27139L7.41987 3.43769L13.4111 3.87681L18 0Z"
+                              fill="url(#paint0_linear_1_156)"/>
+                        <path d="M24.4 10L14.48 20.9091L11.6 18.7277H10L14.48 26L26 10H24.4Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_1_156" x1="24.5" y1="3.5" x2="8.5" y2="32.5"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EBD3AB"/>
+                                <stop offset="1" stop-color="#CEB281"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                Работаем только с сертифицированными материалами
+            </div>
+            <div class="we-custom-item">
+                <div class="we-custom-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 0L22.5889 3.87681L28.5801 3.43769L30.0139 9.27139L35.119 12.4377L32.85 18L35.119 23.5623L30.0139 26.7286L28.5801 32.5623L22.5889 32.1232L18 36L13.4111 32.1232L7.41987 32.5623L5.9861 26.7286L0.880983 23.5623L3.15 18L0.880983 12.4377L5.9861 9.27139L7.41987 3.43769L13.4111 3.87681L18 0Z"
+                              fill="url(#paint0_linear_1_156)"/>
+                        <path d="M24.4 10L14.48 20.9091L11.6 18.7277H10L14.48 26L26 10H24.4Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_1_156" x1="24.5" y1="3.5" x2="8.5" y2="32.5"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EBD3AB"/>
+                                <stop offset="1" stop-color="#CEB281"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                Своя служба доставки и сборки мебели
+            </div>
+            <div class="we-custom-item">
+                <div class="we-custom-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 0L22.5889 3.87681L28.5801 3.43769L30.0139 9.27139L35.119 12.4377L32.85 18L35.119 23.5623L30.0139 26.7286L28.5801 32.5623L22.5889 32.1232L18 36L13.4111 32.1232L7.41987 32.5623L5.9861 26.7286L0.880983 23.5623L3.15 18L0.880983 12.4377L5.9861 9.27139L7.41987 3.43769L13.4111 3.87681L18 0Z"
+                              fill="url(#paint0_linear_1_156)"/>
+                        <path d="M24.4 10L14.48 20.9091L11.6 18.7277H10L14.48 26L26 10H24.4Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_1_156" x1="24.5" y1="3.5" x2="8.5" y2="32.5"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EBD3AB"/>
+                                <stop offset="1" stop-color="#CEB281"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                Собственные дизайнеры, установщики и технологи
+            </div>
+            <div class="we-custom-item">
+                <div class="we-custom-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 0L22.5889 3.87681L28.5801 3.43769L30.0139 9.27139L35.119 12.4377L32.85 18L35.119 23.5623L30.0139 26.7286L28.5801 32.5623L22.5889 32.1232L18 36L13.4111 32.1232L7.41987 32.5623L5.9861 26.7286L0.880983 23.5623L3.15 18L0.880983 12.4377L5.9861 9.27139L7.41987 3.43769L13.4111 3.87681L18 0Z"
+                              fill="url(#paint0_linear_1_156)"/>
+                        <path d="M24.4 10L14.48 20.9091L11.6 18.7277H10L14.48 26L26 10H24.4Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_1_156" x1="24.5" y1="3.5" x2="8.5" y2="32.5"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EBD3AB"/>
+                                <stop offset="1" stop-color="#CEB281"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                Предоставляем 3х летнюю гарантию на собственную продукцию, при правильном использовании.
+            </div>
+            <div class="we-custom-item">
+                <div class="we-custom-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 0L22.5889 3.87681L28.5801 3.43769L30.0139 9.27139L35.119 12.4377L32.85 18L35.119 23.5623L30.0139 26.7286L28.5801 32.5623L22.5889 32.1232L18 36L13.4111 32.1232L7.41987 32.5623L5.9861 26.7286L0.880983 23.5623L3.15 18L0.880983 12.4377L5.9861 9.27139L7.41987 3.43769L13.4111 3.87681L18 0Z"
+                              fill="url(#paint0_linear_1_156)"/>
+                        <path d="M24.4 10L14.48 20.9091L11.6 18.7277H10L14.48 26L26 10H24.4Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_1_156" x1="24.5" y1="3.5" x2="8.5" y2="32.5"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EBD3AB"/>
+                                <stop offset="1" stop-color="#CEB281"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                Изготавливаем мебель любой сложности, работаем с огромным количеством материалов
+            </div>
+            <div class="we-custom-item">
+                <div class="we-custom-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 0L22.5889 3.87681L28.5801 3.43769L30.0139 9.27139L35.119 12.4377L32.85 18L35.119 23.5623L30.0139 26.7286L28.5801 32.5623L22.5889 32.1232L18 36L13.4111 32.1232L7.41987 32.5623L5.9861 26.7286L0.880983 23.5623L3.15 18L0.880983 12.4377L5.9861 9.27139L7.41987 3.43769L13.4111 3.87681L18 0Z"
+                              fill="url(#paint0_linear_1_156)"/>
+                        <path d="M24.4 10L14.48 20.9091L11.6 18.7277H10L14.48 26L26 10H24.4Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_1_156" x1="24.5" y1="3.5" x2="8.5" y2="32.5"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EBD3AB"/>
+                                <stop offset="1" stop-color="#CEB281"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                Более 20 человек трудятся над созданием идеальной мебели для вас
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section gallery line" id="gallery">
+
+    <div class="container">
+        <div class="we-title">Галерея выполненных работ</div>
+        <div class="gallery-bg-text">галерея</div>
+    </div>
+    <div class="swiper gallery-wrapper">
+        <div class="swiper-wrapper gallery-slider">
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/42UfeOL_MvA.jpg"  alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/ciBhaaMQeos.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/cjcqw-toKUU.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/fXgSrdm_hWs.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/fYEWtwEjr78.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/GLb1a55fJAM.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/Ibvzuwcmj_8.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/jNZJQVn0Ymc.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/NsPqYV6v454.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/yyf4SSzpMx0.jpg" alt="">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="/img/gallery/Z6fFNo9RlJo.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next">
+        <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 15L0 0.566243V29.4338L25 15Z" fill="white"/>
+        </svg>
+    </div>
+    <div class="swiper-button-prev">
+        <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 15L25 29.4338V0.566243L0 15Z" fill="white"/>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="swiper-count">
+            <div class="swiper-pagination-count">01</div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="gallery-more">
+            <a href="https://vk.com/albums-70106656" class="button" target="_blank">Больше примеров</a>
+        </div>
+    </div>
+</div>
+<div class="section popular-orders" id="popular-orders">
+    <div class="container">
+        <div class="popular-orders-title">Популярные заказы</div>
+        <div class="popular-orders-wrapper">
+            <div class="popular-item popular-item-1">
+                <div class="popular-item-title">Кухни</div>
+                <div class="popular-item-description">От 3 недель.</div>
+                <div class="popular-item-price">от 50 000руб.</div>
+            </div>
+            <div class="popular-item popular-item-2">
+                <div class="popular-item-title">Шкафы</div>
+                <div class="popular-item-description">От 3 недель.</div>
+                <div class="popular-item-price">от 20 000руб.</div>
+            </div>
+            <div class="popular-item popular-item-3">
+                <div class="popular-item-title">Прихожие</div>
+                <div class="popular-item-description">От 3 недель.</div>
+                <div class="popular-item-price">от 15 000руб.</div>
+            </div>
+            <div class="popular-item popular-item-4">
+                <div class="popular-item-title">Гардеробные</div>
+                <div class="popular-item-description">От 3 недель.</div>
+                <div class="popular-item-price">от 30 000руб.</div>
+            </div>
+            <div class="popular-item popular-item-5">
+                <div class="popular-item-title">Спальни</div>
+                <div class="popular-item-description">От 3 недель.</div>
+                <div class="popular-item-price">от 50 000руб.</div>
+            </div>
+            <div class="popular-item popular-item-6">
+                <div class="popular-item-title text-center mt-5">Не нашли нужного?</div>
+                <div class="popular-item-price popular-item-price_custom">
+                    Оставьте заявку и мы рассчитаем стоимость производства интересующего вас изделия
+                </div>
+                <a href="#" class="button mx-auto" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section dont-find">
+    <div class="container">
+        <div class="whatsapp whatsapp-icon-q">
+            <div class="whatsapp-title">Не нашли интересующий вас товар?</div>
+            <div class="whatsapp-description">Мы подготовим ваш дизайн проект, а наш менеджер <br> поможет определиться с решением
+            </div>
+            <a class="button-outline" data-toggle="modal" data-target="#exampleModal">Подобрать вариант</a>
+        </div>
+    </div>
+</div>
+<div class="section contact-form" id="contact-form">
+    <div class="container">
+        <div class="contact-form-title">Оставьте заявку на предварительный расчет стоимости и сроков производства</div>
+        <div class="contact-form-description">Мы подготовим ваш дизайн проект всего за 1 день, а наш менеджер поможет определиться с решением.</div>
+        <form action="">
+            <div class="contact-form-group">
+                <div class="contact-form-icon">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.55372 5.24075L6.17092 1.33599C5.78095 0.886013 5.06599 0.888013 4.61302 1.34199L1.83118 4.12882C1.00323 4.95777 0.766246 6.1887 1.24522 7.17564C4.10667 13.1002 8.88481 17.8851 14.8054 20.7548C15.7913 21.2338 17.0213 20.9968 17.8492 20.1679L20.6571 17.355C21.112 16.9001 21.113 16.1811 20.6591 15.7911L16.7393 12.4263C16.3293 12.0743 15.6924 12.1203 15.2814 12.5323L13.9175 13.8982C13.8476 13.9714 13.7557 14.0197 13.6558 14.0356C13.5559 14.0514 13.4536 14.0341 13.3645 13.9862C11.1351 12.7024 9.28573 10.8506 8.00481 8.61955C7.95684 8.53031 7.93947 8.42779 7.95537 8.32772C7.97126 8.22766 8.01955 8.13557 8.09281 8.06558L9.45273 6.70466C9.8647 6.29069 9.9097 5.65073 9.55372 5.23975V5.24075Z" stroke="#626262" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <input type="text" placeholder="+ 7 (900)-000-00-00" name="phone">
+            </div>
+            <div class="contact-form-group">
+                <div class="contact-form-icon">
+                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.375 20C24.375 20 26 20 26 18.3333C26 16.6667 24.375 11.6667 17.875 11.6667C11.375 11.6667 9.75 16.6667 9.75 18.3333C9.75 20 11.375 20 11.375 20H24.375ZM11.4107 18.3333C11.3987 18.3316 11.3868 18.3294 11.375 18.3267C11.3766 17.8867 11.6464 16.61 12.61 15.46C13.507 14.3817 15.0833 13.3333 17.875 13.3333C20.6651 13.3333 22.2414 14.3833 23.14 15.46C24.1036 16.61 24.3717 17.8883 24.375 18.3267L24.362 18.33C24.3544 18.3313 24.3469 18.3324 24.3392 18.3333H11.4107ZM17.875 8.33333C18.737 8.33333 19.5636 7.98214 20.1731 7.35702C20.7826 6.7319 21.125 5.88405 21.125 5C21.125 4.11594 20.7826 3.2681 20.1731 2.64298C19.5636 2.01786 18.737 1.66667 17.875 1.66667C17.013 1.66667 16.1864 2.01786 15.5769 2.64298C14.9674 3.2681 14.625 4.11594 14.625 5C14.625 5.88405 14.9674 6.7319 15.5769 7.35702C16.1864 7.98214 17.013 8.33333 17.875 8.33333ZM22.75 5C22.75 5.65661 22.6239 6.30679 22.3789 6.91342C22.1339 7.52004 21.7748 8.07124 21.3221 8.53553C20.8695 8.99983 20.332 9.36812 19.7406 9.6194C19.1491 9.87067 18.5152 10 17.875 10C17.2348 10 16.6009 9.87067 16.0094 9.6194C15.418 9.36812 14.8805 8.99983 14.4279 8.53553C13.9752 8.07124 13.6161 7.52004 13.3711 6.91342C13.1261 6.30679 13 5.65661 13 5C13 3.67392 13.5136 2.40215 14.4279 1.46447C15.3421 0.526784 16.5821 0 17.875 0C19.1679 0 20.4079 0.526784 21.3221 1.46447C22.2364 2.40215 22.75 3.67392 22.75 5ZM11.271 12.1333C10.621 11.9234 9.95091 11.7854 9.27225 11.7217C8.89091 11.6845 8.50806 11.6661 8.125 11.6667C1.625 11.6667 0 16.6667 0 18.3333C0 19.445 0.541125 20 1.625 20H8.476C8.2351 19.4797 8.11496 18.9092 8.125 18.3333C8.125 16.65 8.73763 14.93 9.89625 13.4933C10.2911 13.0033 10.751 12.545 11.271 12.1333ZM7.995 13.3333C7.03325 14.8155 6.51372 16.553 6.5 18.3333H1.625C1.625 17.9 1.8915 16.6167 2.86 15.46C3.74563 14.4 5.2845 13.3667 7.995 13.335V13.3333ZM2.4375 5.83333C2.4375 4.50725 2.95111 3.23548 3.86535 2.2978C4.77959 1.36012 6.01957 0.833333 7.3125 0.833333C8.60543 0.833333 9.84541 1.36012 10.7596 2.2978C11.6739 3.23548 12.1875 4.50725 12.1875 5.83333C12.1875 7.15942 11.6739 8.43118 10.7596 9.36887C9.84541 10.3065 8.60543 10.8333 7.3125 10.8333C6.01957 10.8333 4.77959 10.3065 3.86535 9.36887C2.95111 8.43118 2.4375 7.15942 2.4375 5.83333ZM7.3125 2.5C6.45055 2.5 5.6239 2.85119 5.0144 3.47631C4.40491 4.10143 4.0625 4.94928 4.0625 5.83333C4.0625 6.71739 4.40491 7.56523 5.0144 8.19036C5.6239 8.81548 6.45055 9.16667 7.3125 9.16667C8.17445 9.16667 9.0011 8.81548 9.6106 8.19036C10.2201 7.56523 10.5625 6.71739 10.5625 5.83333C10.5625 4.94928 10.2201 4.10143 9.6106 3.47631C9.0011 2.85119 8.17445 2.5 7.3125 2.5Z" fill="#626262"/>
+                    </svg>
+
+                </div>
+                <input type="text" placeholder="Ваше имя" name="name">
+            </div>
+            <button class="button-outline">отправить</button>
+            <span>Нажимая кнопку «записаться», вы соглашаетесь с политикой конфиденциальности</span>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="footer-links">
+                    <a href="#">О компании</a>
+                    <a href="#zakazat">Подобрать вариант</a>
+                    <a href="#whatsapp">Задать вопрос</a>
+                    <a href="#gallery">Примеры работ</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#popular-orders">Услуги</a>
+                    <a href="#contact-form">Оставить заявку</a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="footer-copy">
+                    <a href="#" class="logo">
+                        <img src="/img/logo.svg" alt="">
+                    </a>
+                    <span>Тёплый Дом © 2021 All Right Reserved</span>
+                    <div class="phone">
+                        <a class="telephone mb-3" href="tel:+7(930)166-72-48">
+                            <svg width="17" class="mr-3" height="17" viewBox="0 0 17 17" fill="#DAC093"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.7638 14.1361L14.367 16.5137C14.0132 16.8765 13.5442 16.9994 13.0875 17C11.0677 16.9395 9.15861 15.9474 7.5911 14.9286C5.01812 13.0568 2.6573 10.7358 1.17561 7.93095C0.607328 6.75479 -0.0594691 5.2541 0.00423838 3.94129C0.00991922 3.44744 0.143001 2.96276 0.490807 2.64443L2.88761 0.248836C3.38531 -0.174507 3.86662 -0.028137 4.18512 0.464976L6.11336 4.12142C6.31631 4.5546 6.19989 5.01872 5.89709 5.32825L5.01405 6.21083C4.95954 6.28551 4.92483 6.37051 4.92395 6.46302C5.26256 7.77374 6.28839 8.98184 7.1946 9.81323C8.1008 10.6446 9.07487 11.771 10.3393 12.0377C10.4956 12.0813 10.687 12.0966 10.7988 11.9927L11.826 10.948C12.1801 10.6796 12.6914 10.5484 13.0695 10.7679H13.0875L16.5655 12.8212C17.0761 13.1413 17.1294 13.7598 16.7638 14.1361Z"
+                                      fill="white"/>
+                            </svg>
+                            +7(930)166-72-48
+                        </a>
+                        <a class="telephone" href="tel:+7(482)271-07-17">
+                            <svg width="17" class="mr-3" height="17" viewBox="0 0 17 17" fill="#DAC093"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.7638 14.1361L14.367 16.5137C14.0132 16.8765 13.5442 16.9994 13.0875 17C11.0677 16.9395 9.15861 15.9474 7.5911 14.9286C5.01812 13.0568 2.6573 10.7358 1.17561 7.93095C0.607328 6.75479 -0.0594691 5.2541 0.00423838 3.94129C0.00991922 3.44744 0.143001 2.96276 0.490807 2.64443L2.88761 0.248836C3.38531 -0.174507 3.86662 -0.028137 4.18512 0.464976L6.11336 4.12142C6.31631 4.5546 6.19989 5.01872 5.89709 5.32825L5.01405 6.21083C4.95954 6.28551 4.92483 6.37051 4.92395 6.46302C5.26256 7.77374 6.28839 8.98184 7.1946 9.81323C8.1008 10.6446 9.07487 11.771 10.3393 12.0377C10.4956 12.0813 10.687 12.0966 10.7988 11.9927L11.826 10.948C12.1801 10.6796 12.6914 10.5484 13.0695 10.7679H13.0875L16.5655 12.8212C17.0761 13.1413 17.1294 13.7598 16.7638 14.1361Z"
+                                      fill="white"/>
+                            </svg>
+                            +7(482)271-07-17
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.instagram.com/very_warm_house/" target="_blank">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9965 8.66482C10.6094 8.66482 8.66141 10.6129 8.66141 13C8.66141 15.3871 10.6094 17.3352 12.9965 17.3352C15.3836 17.3352 17.3316 15.3871 17.3316 13C17.3316 10.6129 15.3836 8.66482 12.9965 8.66482ZM25.9985 13C25.9985 11.2048 26.0148 9.42584 25.914 7.63387C25.8132 5.55247 25.3384 3.70522 23.8164 2.18319C22.2911 0.657911 20.4472 0.186343 18.3658 0.0855244C16.5706 -0.0152937 14.7917 0.000967347 12.9998 0.000967347C11.2046 0.000967347 9.42566 -0.0152937 7.63373 0.0855244C5.55236 0.186343 3.70515 0.661163 2.18315 2.18319C0.657899 3.70847 0.186339 5.55247 0.0855228 7.63387C-0.0152934 9.42909 0.000967329 11.208 0.000967329 13C0.000967329 14.792 -0.0152934 16.5742 0.0855228 18.3661C0.186339 20.4475 0.661151 22.2948 2.18315 23.8168C3.7084 25.3421 5.55236 25.8137 7.63373 25.9145C9.42891 26.0153 11.2078 25.999 12.9998 25.999C14.7949 25.999 16.5739 26.0153 18.3658 25.9145C20.4472 25.8137 22.2944 25.3388 23.8164 23.8168C25.3416 22.2915 25.8132 20.4475 25.914 18.3661C26.0181 16.5742 25.9985 14.7952 25.9985 13ZM12.9965 19.6703C9.30533 19.6703 6.32637 16.6912 6.32637 13C6.32637 9.30876 9.30533 6.32974 12.9965 6.32974C16.6877 6.32974 19.6666 9.30876 19.6666 13C19.6666 16.6912 16.6877 19.6703 12.9965 19.6703ZM19.9398 7.61436C19.078 7.61436 18.382 6.91839 18.382 6.05656C18.382 5.19473 19.078 4.49876 19.9398 4.49876C20.8016 4.49876 21.4976 5.19473 21.4976 6.05656C21.4978 6.2612 21.4577 6.46389 21.3795 6.65301C21.3013 6.84212 21.1866 7.01396 21.0419 7.15866C20.8972 7.30337 20.7254 7.41811 20.5363 7.4963C20.3471 7.5745 20.1445 7.61462 19.9398 7.61436Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="https://vk.com/very_warm_house" target="_blank">
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V26H25V0H0ZM11.0977 6.95227C11.8056 6.94464 12.4979 7.02626 12.8357 7.03638C14.0878 7.07386 14.3089 7.73247 14.2929 8.27417C14.2695 9.06754 13.7786 12.4236 14.6881 12.7509C16.0133 12.0139 16.902 9.72491 17.5491 8.27417C17.8765 7.54037 17.8247 7.5039 18.5791 7.50293L21.5759 7.49816C22.2976 7.49723 22.2694 7.4709 22.5006 7.77747C23.0383 8.49047 20.8038 11.4563 20.0821 12.2764C18.7502 13.7897 19.5273 14.3758 19.7418 14.5837C20.7358 15.5475 21.6962 16.547 22.2931 17.4688C22.7676 18.2016 22.5716 18.8838 21.968 18.9097L18.7545 19.0477C17.6882 19.0933 16.03 17.1053 15.7654 16.6721C15.5513 16.3148 14.5198 15.867 14.4226 16.78L14.2868 18.0543C14.1881 18.9652 13.5415 18.9439 13.031 18.9667C9.49623 19.1249 8.29246 17.7253 6.51242 15.6596C5.20781 13.7408 3.96283 11.811 2.93119 9.49919C2.6224 8.8072 2.45883 8.29957 2.41696 7.76152C2.93604 7.33958 4.75806 7.52132 5.98142 7.49333C6.31602 7.48566 6.54179 7.68506 6.71842 8.08208C7.4076 9.63153 8.15923 11.1531 9.15373 12.4985C9.58683 12.9133 9.96971 13.0659 10.1608 12.2224C10.2718 12.2117 10.2629 10.8148 10.2691 9.76103C10.2735 9.03749 10.1917 8.16981 9.01335 7.76945C9.25171 7.11969 10.1876 6.96208 11.0977 6.95227Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-title">Адреса магазинов:</div>
+                <div class="footer-content">
+                    <div class="footer-content-item">
+                        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.41007 12.24C5.41007 12.24 10.0001 7.89021 10.0001 4.59C10.0001 3.37266 9.51648 2.20517 8.65569 1.34438C7.7949 0.483588 6.62741 0 5.41007 0C4.19272 0 3.02524 0.483588 2.16445 1.34438C1.30366 2.20517 0.820068 3.37266 0.820068 4.59C0.820068 7.89021 5.41007 12.24 5.41007 12.24ZM5.41007 6.885C4.8014 6.885 4.21765 6.64321 3.78726 6.21281C3.35686 5.78241 3.11507 5.19867 3.11507 4.59C3.11507 3.98133 3.35686 3.39759 3.78726 2.96719C4.21765 2.53679 4.8014 2.295 5.41007 2.295C6.01874 2.295 6.60248 2.53679 7.03288 2.96719C7.46327 3.39759 7.70507 3.98133 7.70507 4.59C7.70507 5.19867 7.46327 5.78241 7.03288 6.21281C6.60248 6.64321 6.01874 6.885 5.41007 6.885Z" fill="white"/>
+                        </svg>
+                        г. Красный Холм, пл.Народная, д.14/18
+                        <a href="tel:8-903-800-19-07">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.8194 9.97842L10.9865 11.6567C10.716 11.9128 10.3573 11.9996 10.0081 12C8.46356 11.9573 7.00364 11.257 5.80496 10.5378C3.83738 9.21655 2.03205 7.5782 0.898995 5.59832C0.464427 4.76809 -0.0454764 3.70878 0.00324112 2.78209C0.00758528 2.43349 0.109354 2.09136 0.375323 1.86666L2.20817 0.175649C2.58877 -0.123181 2.95683 -0.0198614 3.20039 0.328219L4.67492 2.90924C4.83012 3.21501 4.74109 3.54263 4.50954 3.76112L3.83428 4.38412C3.79259 4.43683 3.76605 4.49683 3.76538 4.56213C4.02431 5.48735 4.80877 6.34012 5.50175 6.92699C6.19473 7.51387 6.93961 8.30897 7.9065 8.4972C8.02602 8.52797 8.17241 8.53878 8.25792 8.46541L9.04344 7.72798C9.31423 7.53853 9.7052 7.44593 9.99429 7.60084H10.0081L12.6678 9.05027C13.0582 9.27619 13.0989 9.71279 12.8194 9.97842Z" fill="white"/>
+                            </svg>
+                            8-903-800-19-07</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.41007 12.24C5.41007 12.24 10.0001 7.89021 10.0001 4.59C10.0001 3.37266 9.51648 2.20517 8.65569 1.34438C7.7949 0.483588 6.62741 0 5.41007 0C4.19272 0 3.02524 0.483588 2.16445 1.34438C1.30366 2.20517 0.820068 3.37266 0.820068 4.59C0.820068 7.89021 5.41007 12.24 5.41007 12.24ZM5.41007 6.885C4.8014 6.885 4.21765 6.64321 3.78726 6.21281C3.35686 5.78241 3.11507 5.19867 3.11507 4.59C3.11507 3.98133 3.35686 3.39759 3.78726 2.96719C4.21765 2.53679 4.8014 2.295 5.41007 2.295C6.01874 2.295 6.60248 2.53679 7.03288 2.96719C7.46327 3.39759 7.70507 3.98133 7.70507 4.59C7.70507 5.19867 7.46327 5.78241 7.03288 6.21281C6.60248 6.64321 6.01874 6.885 5.41007 6.885Z" fill="white"/>
+                        </svg>
+                        г. Кашин, пл.Пролетарская, д.17/1
+                        <a href="tel: 8-904-006-10-65">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.8194 9.97842L10.9865 11.6567C10.716 11.9128 10.3573 11.9996 10.0081 12C8.46356 11.9573 7.00364 11.257 5.80496 10.5378C3.83738 9.21655 2.03205 7.5782 0.898995 5.59832C0.464427 4.76809 -0.0454764 3.70878 0.00324112 2.78209C0.00758528 2.43349 0.109354 2.09136 0.375323 1.86666L2.20817 0.175649C2.58877 -0.123181 2.95683 -0.0198614 3.20039 0.328219L4.67492 2.90924C4.83012 3.21501 4.74109 3.54263 4.50954 3.76112L3.83428 4.38412C3.79259 4.43683 3.76605 4.49683 3.76538 4.56213C4.02431 5.48735 4.80877 6.34012 5.50175 6.92699C6.19473 7.51387 6.93961 8.30897 7.9065 8.4972C8.02602 8.52797 8.17241 8.53878 8.25792 8.46541L9.04344 7.72798C9.31423 7.53853 9.7052 7.44593 9.99429 7.60084H10.0081L12.6678 9.05027C13.0582 9.27619 13.0989 9.71279 12.8194 9.97842Z" fill="white"/>
+                            </svg>
+                            8-904-006-10-65</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.41007 12.24C5.41007 12.24 10.0001 7.89021 10.0001 4.59C10.0001 3.37266 9.51648 2.20517 8.65569 1.34438C7.7949 0.483588 6.62741 0 5.41007 0C4.19272 0 3.02524 0.483588 2.16445 1.34438C1.30366 2.20517 0.820068 3.37266 0.820068 4.59C0.820068 7.89021 5.41007 12.24 5.41007 12.24ZM5.41007 6.885C4.8014 6.885 4.21765 6.64321 3.78726 6.21281C3.35686 5.78241 3.11507 5.19867 3.11507 4.59C3.11507 3.98133 3.35686 3.39759 3.78726 2.96719C4.21765 2.53679 4.8014 2.295 5.41007 2.295C6.01874 2.295 6.60248 2.53679 7.03288 2.96719C7.46327 3.39759 7.70507 3.98133 7.70507 4.59C7.70507 5.19867 7.46327 5.78241 7.03288 6.21281C6.60248 6.64321 6.01874 6.885 5.41007 6.885Z" fill="white"/>
+                        </svg>
+                        г. Торжок ул.Луначарского, д. 39
+                        <a href="tel:8-930-184-44-43">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.8194 9.97842L10.9865 11.6567C10.716 11.9128 10.3573 11.9996 10.0081 12C8.46356 11.9573 7.00364 11.257 5.80496 10.5378C3.83738 9.21655 2.03205 7.5782 0.898995 5.59832C0.464427 4.76809 -0.0454764 3.70878 0.00324112 2.78209C0.00758528 2.43349 0.109354 2.09136 0.375323 1.86666L2.20817 0.175649C2.58877 -0.123181 2.95683 -0.0198614 3.20039 0.328219L4.67492 2.90924C4.83012 3.21501 4.74109 3.54263 4.50954 3.76112L3.83428 4.38412C3.79259 4.43683 3.76605 4.49683 3.76538 4.56213C4.02431 5.48735 4.80877 6.34012 5.50175 6.92699C6.19473 7.51387 6.93961 8.30897 7.9065 8.4972C8.02602 8.52797 8.17241 8.53878 8.25792 8.46541L9.04344 7.72798C9.31423 7.53853 9.7052 7.44593 9.99429 7.60084H10.0081L12.6678 9.05027C13.0582 9.27619 13.0989 9.71279 12.8194 9.97842Z" fill="white"/>
+                            </svg>
+                            8-930-184-44-43</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <svg width="19" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.41007 12.24C5.41007 12.24 10.0001 7.89021 10.0001 4.59C10.0001 3.37266 9.51648 2.20517 8.65569 1.34438C7.7949 0.483588 6.62741 0 5.41007 0C4.19272 0 3.02524 0.483588 2.16445 1.34438C1.30366 2.20517 0.820068 3.37266 0.820068 4.59C0.820068 7.89021 5.41007 12.24 5.41007 12.24ZM5.41007 6.885C4.8014 6.885 4.21765 6.64321 3.78726 6.21281C3.35686 5.78241 3.11507 5.19867 3.11507 4.59C3.11507 3.98133 3.35686 3.39759 3.78726 2.96719C4.21765 2.53679 4.8014 2.295 5.41007 2.295C6.01874 2.295 6.60248 2.53679 7.03288 2.96719C7.46327 3.39759 7.70507 3.98133 7.70507 4.59C7.70507 5.19867 7.46327 5.78241 7.03288 6.21281C6.60248 6.64321 6.01874 6.885 5.41007 6.885Z" fill="white"/>
+                        </svg>
+                        г. Тверь, Октябрьский проспект, д.99 <br> секция 2 (вход со стороны бульвара Гусева 46)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="mobile-menu">
+    <div class="d-flex logo justify-content-between">
+        <img src="/img/logo.svg" alt="">
+        <button class="burger-menu">
+            <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.5C0 1.11929 1.11929 0 2.5 0H26.5C27.8807 0 29 1.11929 29 2.5C29 3.88071 27.8807 5 26.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z"
+                      fill="white"/>
+                <path d="M0 12.5C0 11.1193 1.11929 10 2.5 10H26.5C27.8807 10 29 11.1193 29 12.5C29 13.8807 27.8807 15 26.5 15H2.5C1.11929 15 0 13.8807 0 12.5Z"
+                      fill="white"/>
+                <path d="M0 22.5C0 21.1193 1.11929 20 2.5 20H26.5C27.8807 20 29 21.1193 29 22.5C29 23.8807 27.8807 25 26.5 25H2.5C1.11929 25 0 23.8807 0 22.5Z"
+                      fill="white"/>
+            </svg>
+        </button>
+    </div>
+    <div class="mobile-menu-wrapper">
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+       <div class="modal-content my-modal-content">
+            <div class="my-modal-wrapper">
+                <div class="form-wrapper">
+                    <div class="my-modal-close" data-dismiss="modal" >
+                        <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.745519 34.9691C-0.248506 33.9909 -0.248506 32.405 0.745518 31.4268L31.9356 0.733641C32.9296 -0.244547 34.5412 -0.244547 35.5353 0.733641L36.6369 1.81772C37.6309 2.79591 37.6309 4.38187 36.6369 5.36006L5.44683 36.0532C4.45281 37.0314 2.84118 37.0314 1.84715 36.0532L0.745519 34.9691Z" fill="white"/>
+                            <path d="M2.46474 0.9468C3.45877 -0.0313878 5.0704 -0.0313886 6.06442 0.946799L37.2545 31.6399C38.2485 32.6181 38.2485 34.2041 37.2545 35.1823L36.1529 36.2664C35.1588 37.2445 33.5472 37.2445 32.5532 36.2664L1.36311 5.57322C0.369082 4.59503 0.369082 3.00907 1.36311 2.03088L2.46474 0.9468Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="contact-form-title">Оставьте заявку на предварительный расчет стоимости и сроков производства</div>
+                    <div class="contact-form-description">Мы подготовим ваш дизайн проект всего за 1 день, а наш менеджер поможет определиться с решением.</div>
+                    <form action="">
+                        <div class="contact-form-group">
+                            <div class="contact-form-icon">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.55372 5.24075L6.17092 1.33599C5.78095 0.886013 5.06599 0.888013 4.61302 1.34199L1.83118 4.12882C1.00323 4.95777 0.766246 6.1887 1.24522 7.17564C4.10667 13.1002 8.88481 17.8851 14.8054 20.7548C15.7913 21.2338 17.0213 20.9968 17.8492 20.1679L20.6571 17.355C21.112 16.9001 21.113 16.1811 20.6591 15.7911L16.7393 12.4263C16.3293 12.0743 15.6924 12.1203 15.2814 12.5323L13.9175 13.8982C13.8476 13.9714 13.7557 14.0197 13.6558 14.0356C13.5559 14.0514 13.4536 14.0341 13.3645 13.9862C11.1351 12.7024 9.28573 10.8506 8.00481 8.61955C7.95684 8.53031 7.93947 8.42779 7.95537 8.32772C7.97126 8.22766 8.01955 8.13557 8.09281 8.06558L9.45273 6.70466C9.8647 6.29069 9.9097 5.65073 9.55372 5.23975V5.24075Z" stroke="#626262" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <input type="text" placeholder="+ 7 (900)-000-00-00" name="phone">
+                        </div>
+                        <div class="contact-form-group">
+                            <div class="contact-form-icon">
+                                <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.375 20C24.375 20 26 20 26 18.3333C26 16.6667 24.375 11.6667 17.875 11.6667C11.375 11.6667 9.75 16.6667 9.75 18.3333C9.75 20 11.375 20 11.375 20H24.375ZM11.4107 18.3333C11.3987 18.3316 11.3868 18.3294 11.375 18.3267C11.3766 17.8867 11.6464 16.61 12.61 15.46C13.507 14.3817 15.0833 13.3333 17.875 13.3333C20.6651 13.3333 22.2414 14.3833 23.14 15.46C24.1036 16.61 24.3717 17.8883 24.375 18.3267L24.362 18.33C24.3544 18.3313 24.3469 18.3324 24.3392 18.3333H11.4107ZM17.875 8.33333C18.737 8.33333 19.5636 7.98214 20.1731 7.35702C20.7826 6.7319 21.125 5.88405 21.125 5C21.125 4.11594 20.7826 3.2681 20.1731 2.64298C19.5636 2.01786 18.737 1.66667 17.875 1.66667C17.013 1.66667 16.1864 2.01786 15.5769 2.64298C14.9674 3.2681 14.625 4.11594 14.625 5C14.625 5.88405 14.9674 6.7319 15.5769 7.35702C16.1864 7.98214 17.013 8.33333 17.875 8.33333ZM22.75 5C22.75 5.65661 22.6239 6.30679 22.3789 6.91342C22.1339 7.52004 21.7748 8.07124 21.3221 8.53553C20.8695 8.99983 20.332 9.36812 19.7406 9.6194C19.1491 9.87067 18.5152 10 17.875 10C17.2348 10 16.6009 9.87067 16.0094 9.6194C15.418 9.36812 14.8805 8.99983 14.4279 8.53553C13.9752 8.07124 13.6161 7.52004 13.3711 6.91342C13.1261 6.30679 13 5.65661 13 5C13 3.67392 13.5136 2.40215 14.4279 1.46447C15.3421 0.526784 16.5821 0 17.875 0C19.1679 0 20.4079 0.526784 21.3221 1.46447C22.2364 2.40215 22.75 3.67392 22.75 5ZM11.271 12.1333C10.621 11.9234 9.95091 11.7854 9.27225 11.7217C8.89091 11.6845 8.50806 11.6661 8.125 11.6667C1.625 11.6667 0 16.6667 0 18.3333C0 19.445 0.541125 20 1.625 20H8.476C8.2351 19.4797 8.11496 18.9092 8.125 18.3333C8.125 16.65 8.73763 14.93 9.89625 13.4933C10.2911 13.0033 10.751 12.545 11.271 12.1333ZM7.995 13.3333C7.03325 14.8155 6.51372 16.553 6.5 18.3333H1.625C1.625 17.9 1.8915 16.6167 2.86 15.46C3.74563 14.4 5.2845 13.3667 7.995 13.335V13.3333ZM2.4375 5.83333C2.4375 4.50725 2.95111 3.23548 3.86535 2.2978C4.77959 1.36012 6.01957 0.833333 7.3125 0.833333C8.60543 0.833333 9.84541 1.36012 10.7596 2.2978C11.6739 3.23548 12.1875 4.50725 12.1875 5.83333C12.1875 7.15942 11.6739 8.43118 10.7596 9.36887C9.84541 10.3065 8.60543 10.8333 7.3125 10.8333C6.01957 10.8333 4.77959 10.3065 3.86535 9.36887C2.95111 8.43118 2.4375 7.15942 2.4375 5.83333ZM7.3125 2.5C6.45055 2.5 5.6239 2.85119 5.0144 3.47631C4.40491 4.10143 4.0625 4.94928 4.0625 5.83333C4.0625 6.71739 4.40491 7.56523 5.0144 8.19036C5.6239 8.81548 6.45055 9.16667 7.3125 9.16667C8.17445 9.16667 9.0011 8.81548 9.6106 8.19036C10.2201 7.56523 10.5625 6.71739 10.5625 5.83333C10.5625 4.94928 10.2201 4.10143 9.6106 3.47631C9.0011 2.85119 8.17445 2.5 7.3125 2.5Z" fill="#626262"/>
+                                </svg>
+
+                            </div>
+                            <input type="text" placeholder="Ваше имя" name="name">
+                        </div>
+                        <button class="button-outline">отправить</button>
+                        <span>Нажимая кнопку «записаться», вы соглашаетесь с политикой конфиденциальности</span>
+                    </form>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+<script src="js/libs.min.js"></script>
+</body>
+</html>
