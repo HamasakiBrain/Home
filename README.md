@@ -24,3 +24,7 @@ npm install
 gulp default
 ```
 
+### 3. Build Project
+```shell
+gulp prebuild
+```
